@@ -1,71 +1,158 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
-  <div class="p" style="padding: 30px;">
-    <h1>Introdução ao bootstrap</h1>
-    <form class="row g-3">
-        <div class="col-sm-8">
-          <label for="inputNome" class="form-label">Nome:</label>
-          <input type="text" class="form-control" id="inputNome">
-        </div>
-        <div class="col-sm-4">
-          <label for="inputData" class="form-label">Data de Nascimento:</label>
-          <input type="date" class="form-control" id="inputData">
-        </div>
-        <div class="col-sm-6">
-            <label for="inputMãe" class="form-label">Nome Mãe:</label>
-            <input type="text" class="form-control" id="inputMãe">
-          </div>
-          <div class="col-sm-6">
-            <label for="inputPai" class="form-label">Nome Pai:</label>
-            <input type="text" class="form-control" id="inputPai">
-          </div>
-          <div class="col-sm-4">
-            <label for="inputCity" class="form-label">Cidade:</label>
-            <input type="text" class="form-control" id="inputCidade">
-          </div>
-          <div class="col-sm-4">
-            <label for="inputCurso" class="form-label">Curso:</label>
-            <select id="inputCurso" class="form-select">
-              <option selected>Selecione o Curso</option>
-              <option>Informática</option>
-              <option>Enfermagem</option>
-              <option>Comércio</option>
-              <option>Administração</option>
-            </select>
-          </div>
-          <div class="col-sm-4">
-            <label for="inputTurma" class="form-label">Turma:</label>
-            <input type="number" class="form-control" id="inputTurma">
-          </div>
-          <div class="col-sm-3">
-            <label for="inputEndereço" class="form-label">Endereço:</label>
-            <input type="text" class="form-control" id="inputEndereço">
-          </div>
-          <div class="col-sm-3">
-            <label for="inputComplemento" class="form-label">Complemento:</label>
-            <input type="text" class="form-control" id="inputComplemento">
-          </div>
-          <div class="col-sm-3">
-            <label for="inputBairro" class="form-label">Bairro:</label>
-            <input type="text" class="form-control" id="inputBairro">
-          </div>
-          <div class="col-sm-3">
-            <label for="inputCep" class="form-label">CEP:</label>
-            <input type="number" class="form-control" maxlength="8" id="inputCep">
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
           </div>
         </div>
-          <button style="width: 120px; margin-left: 30px;" type="submit" class="btn btn-primary">Enviar Dados</button>
+      </div>
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-      </form>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
     </div>
-    
+  </div>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        <h2>Introdução ao bootstrap</h2>
+        <form>
+            <div class="row">
+                <div class="col-sm">
+                    <label for="exampleInputNome">Nome</label>
+                    <input type="email" class="form-control" id="exampleInputNome" aria-describedby="emailHelp" placeholder="">
+                </div>
+                <div class="col-sm-4">
+                    <label for="exampleInputdata">Data de Nascimento</label>
+                    <input type="date" class="form-control" id="exampleInputdata" aria-describedby="emailHelp" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <label for="exampleInputnomem">Nome da Mãe</label>
+                    <input type="password" class="form-control" id="exampleInputnomem" placeholder="">
+                </div>
+                <div class="col-sm">
+                    <label for="exampleInputNomep">Nome do Pai:</label>
+                    <input type="password" class="form-control" id="exampleInputnomep" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <label for="exampleInputcidade">Cidade: </label>
+                    <input type="password" class="form-control" id="exampleInputcidade" placeholder="">
+                </div>
+                <div class="col-sm">
+                    <label for="exampleInputPassword1">Curso:</label>
+                    <select class="form-control" id="exampleInputPassword1">
+                        <option selected>Selecione o Curso</option>
+                        <option value="">Informática</option>
+                        <option value="">Enfermagem</option>
+                        <option value="">Comércio</option>
+                        <option value="">Administração</option>
+                    </select>
+                </div>
+                <div class="col-sm">
+                    <label for="exampleInputt">Turma:</label>
+                    <input type="password" class="form-control" id="exampleInputt" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <label for="exampleInputed">Endereço: </label>
+                    <input type="password" class="form-control" id="exampleInputed" placeholder="">
+                </div>
+                <div class="col-sm">
+                    <label for="exampleInputC">Complemento:</label>
+                    <input type="password" class="form-control" id="exampleInputC" placeholder="">
+                </div>
+                <div class="col-sm">
+                    <label for="exampleInputB">Bairro:</label>
+                    <input type="password" class="form-control" id="exampleInputB" placeholder="">
+                </div>
+                <div class="col-sm">
+                    <label for="exampleInputc">Cep:</label>
+                    <input type="password" class="form-control" id="exampleInputc" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <label for="exampleInputc"> </label>
+                    <button type="password"class=" form-control btn btn-primary" id="exampleInputc" placeholder="">Enviar Dados</button>
+                    </div>
+                </div>    
+            </div>
+        </form>
+    </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </html>
